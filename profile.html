@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="author" content="Yancheng Pan">
+        <meta name="description" content="A music beat resell page">
+        <meta name="keywords" content="beat resell">
+        <title>Beat Cloud</title>   
+        <link rel="stylesheet" href="styles/main.css">  
+    </head>  
+    <body>
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="./profile.html">profile</a>
+            <a href="./beats.html">Beats</a>
+            <a href="./genre.html">Genre</a>
+            <a href="./artist.html">Artist</a>
+            <a href="./purchase.html">Purchase</a>
+        </nav>
+
+        <section id="profile--section" class="container">
+            <header class="container">
+                <h1>Beat Cloud</h1>
+                <h3>WE SELL BEATS</h3>
+                <input type="text" placeholder="Search.." style="width: 200px;">
+            </header>
+            
+            <div class="profile--pic"> 
+                <img src="./img/kanye.png" style="width: 200px; height: 200px;" alt="An image of a tranding artist"/>
+            </div>
+            <div >
+                <h2>Personal Profile</h2>
+                <p>Let us know who are you?</p>
+                <form class="profile--form" action="post">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="china">China</option>
+                      <option value="korea">korea</option>
+                      <option value="usa">USA</option>
+                    </select>
+                
+                    <label for="subject">Personal Bio</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+
+            </div>
+        </section>
+
+        <footer class="container">
+            <small>Copyrirght Yancheng Pan</small>
+            <nav>
+                <a href="./index.html">home</a>
+                <a href="./profile.html">profile</a>
+                <a href="./beats.html">Beats</a>
+                <a href="./genre.html">Genre</a>
+                <a href="./artist.html">Artist</a>
+                <a href="./purchase.html">Purchase</a>
+            </nav>
+        </footer>
+    </body>
+</html>
