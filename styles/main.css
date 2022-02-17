@@ -134,4 +134,26 @@ section.container{
     grid-column: 2;
 }
 
+/* media */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones and tablets: */
+    [class*="col-4"] {
+        width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    [class*="col-12"] {
+        width: 100%;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 200px; 
+        height: 200px;
+    }
+} 
+
 
