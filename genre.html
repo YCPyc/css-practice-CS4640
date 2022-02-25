@@ -9,34 +9,91 @@
         <meta name="description" content="A music beat resell page">
         <meta name="keywords" content="beat resell">
         <title>Beat Cloud</title>   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet/less" type="text/css" href="./styles/main.less" />
     </head>  
     <body>
-        <nav class="navbar">
-            <a href="./index.html">home</a>
-            <a href="./profile.html">profile</a>
-            <a href="./beats.html">Beats</a>
-            <a href="./genre.html">Genre</a>
-            <a href="./artist.html">Artist</a>
-            <a href="./purchase.html">Purchase</a>
+        <nav class="navbar navbar-light flex-column">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-home-tab"  href="./index.html" role="tab"  >Home</a>
+                <a class="nav-link" id="v-pills-artist-tab"  href="./artist.html" role="tab"  >Artist</a>
+                <a class="nav-link active" id="v-pills-genre-tab"  href="./genre.html" role="tab"  >Genre</a>
+                <a class="nav-link" id="v-pills-beats-tab"  href="./beats.html" role="tab" >Beats</a>
+                <a class="nav-link" id="v-pills-purchase-tab"  href="./purchase.html" role="tab" >Purchase</a>
+                <a class="nav-link" id="v-pills-profile-tab"  href="./profile.html" role="tab" >Profile</a>
+            </div>
         </nav>
-        <section id="genre--section" class="container"> 
-            <header class="container">
-                <h1>Beat Cloud</h1>
-                <h3>WE SELL BEATS</h3>
-                <input type="text" placeholder="Search.." style="width: 200px;">
-            </header>
-            
-            <h2>Genre lists</h2>
-            <p>Pick a genre to see what is tranding</p>
-            <ul>
-                <li>Hip Hop</li>
-                <li>RMB</li>
-                <li>Low-fi</li>
-                <li>More</li>
-            </ul>
+
+        <section class="main--content">
+          <h2>Beat Cloud</h2>
+            <section class="search">
+                <div class="search--content">
+                    <h3>WE SELL BEATS</h3>
+                    <input type="text" placeholder="Search.." style="width: 200px;">
+                </div>
+            </section>
+            <section class="highlights">
+                <h3>Some of the genres</h3>
+                <h4>Hear what is trending in the BeatCloud community  <a href="./genre.html"> More>> </a> </h4>
+                <div class="highlights--content">
+                    <div class="card" style="width: 18rem;height:fit-content">
+                        <img src="./img/kanye.png" class="card-img-top" alt="example">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem; height:fit-content">
+                        <img src="./img/kanye.png" class="card-img-top" alt="example">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem; height:fit-content">
+                        <img src="./img/kanye.png" class="card-img-top" alt="example">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem; height:fit-content">
+                        <img src="./img/kanye.png" class="card-img-top" alt="example">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem; height:fit-content">
+                        <img src="./img/kanye.png" class="card-img-top" alt="example">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem; height:fit-content">
+                        <img src="./img/kanye.png" class="card-img-top" alt="example">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </section>
         </section>
-        
+
+
+
+
         <footer class="container">
             <small>Copyrirght Yancheng Pan</small>
             <nav>
@@ -48,5 +105,8 @@
                 <a href="./purchase.html">Purchase</a>
             </nav>
         </footer>
+        <script src="./less.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>

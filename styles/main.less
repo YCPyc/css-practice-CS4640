@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset  */
+
+/* body of styles */
+
+@basic-unit: 10px;
+
+.space-fill {
+    width: 100%;
+    height: 100%;
+  }
+
+* {
+    box-sizing: border-box;
+}  
+body{
+    display: grid;
+    grid-template-columns: [first] 100px [second] auto;
+}
+
+section{
+    padding: @basic-unit;
+    margin-bottom: 22px;
+}
+
+.main--content{
+    grid-column: second;
+    .space-fill();
+}
+.search--content{
+    background-image: linear-gradient(transparent, white 99.9%), url('../img/kanyeblue.png');
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights--content{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+    align-content: flex-start;
+    gap:@basic-unit;
+    .space-fill();
+}
+
+header.container{
+    text-align: center;
+}
+
+footer.container{
+    position: relative;
+    margin-top: @basic-unit;
+    bottom: 0;
+    padding-top: @basic-unit;
+    padding-bottom: @basic-unit;
+    margin-left: 100px;
+    width: 400px;
+    a{
+        margin:10px;
+    }
+}
+
+section.container{
+    padding-left:20px;
+}
+
+.navbar{
+    position: fixed;
+    background-color:lightblue;
+    height: 100%;
+    width: 90px;
+    grid-column: first;
+    a{
+        display: block;
+        padding: 15px
+    }
+}
+
+
+
+
+
+
+/* media */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones and tablets: */
+    [class*="col-4"] {
+        width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    [class*="col-12"] {
+        width: 100%;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    img {
+        display: none;
+    }
+} 
+
+

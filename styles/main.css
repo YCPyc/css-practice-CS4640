@@ -34,17 +34,36 @@ table {
 }  
 body{
     display: grid;
-    grid-template-columns: [first] 90px [second] auto;
+    grid-template-columns: [first] 100px [second] auto;
 }
+
 section{
     padding: 10px;
     margin-bottom: 22px;
 }
 
-.container{
-    padding:1px;
-    margin:0;
-    width:100%;
+.main--content{
+    grid-column: second;
+    width: 100%;
+    height:100%;
+}
+.search--content{
+    background-image: linear-gradient(transparent, white 99.9%), url('../img/kanyeblue.png');
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights--content{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+    align-content: flex-start;
+    gap:10px;
+    width: 100%;
+    height:100%;
 }
 
 header.container{
@@ -52,87 +71,41 @@ header.container{
 }
 
 footer.container{
-    display: block;
-    position: absolute;
+    position: relative;
     margin-top: 10px;
     bottom: 0;
-    padding-top:10px;
-    padding-bottom:10px;
-    left: 100px;
-    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    width: 400px;
+   
 }
+
+footer.container a{
+   margin: 5px
+   
+}
+
 
 section.container{
     padding-left:20px;
 }
 
 .navbar{
-    top: 0;
-    left: 0;
     position: fixed;
-    background-color:orange;
+    background-color:lightblue;
     height: 100%;
-    width: 80px;
+    width: 90px;
     grid-column: first;
 }
 .navbar a{
     display: block;
     padding: 15px
 }
-#info--section{
-    grid-column: second;
-    left:1;
-}
-.info--banner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding:2px;
-    margin:auto;
-    padding: 5px;
 
 
-}
-
-#highlight--section{
-    grid-column: second;
-}
-.highlight--pic{
-    margin:20px;
-}
-.highlight--pic img{
-    padding:10px;
-}
-.footer--section{
-    grid-column: second;
-    grid-row:10;
-}
 
 
-#artist--section{
-    grid-column: 2;
-}
-
-#genre--section{
-    grid-column: 2;
-}
-
-#profile--section{
-    grid-column: 2;
-}
-
-.profile--form{
-    display:flex;
-    flex-direction: column;
-}
-
-#beats--section{
-    grid-column: 2;
-}
-
-#purchase--section{
-    grid-column: 2;
-}
 
 /* media */
 
