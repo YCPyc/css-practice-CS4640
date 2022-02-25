@@ -37,6 +37,10 @@ body{
     grid-template-columns: [first] 100px [second] auto;
 }
 
+h1{
+    margin-left:290px;
+}
+
 section{
     padding: 10px;
     margin-bottom: 22px;
